@@ -5,7 +5,7 @@ Adjusts TCP settings and existing SSH workers’ open-file limits. No Python or 
 
 ##  Quick start
 
-Copy `ssh-pivot-tune.sh` to the pivot host.
+Move `ssh-pivot-tune.sh` to the pivot host.
 
 **1. Connect from your workstation**
 
