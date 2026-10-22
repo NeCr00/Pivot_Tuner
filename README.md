@@ -3,7 +3,7 @@
 **Reversible Linux tuning for SSH SOCKS proxies.**  
 Adjusts TCP settings and existing SSH workers’ open-file limits. No Python or pip required.
 
-## 🚀 Quick start
+##  Quick start
 
 Copy `ssh-pivot-tune.sh` to the pivot host.
 
@@ -21,7 +21,7 @@ sudo bash ssh-pivot-tune.sh apply
 
 Configure your applications to use **SOCKS5 → `127.0.0.1:1090`**. Keep the SSH session open.
 
-## ↩️ Restore
+## Restore
 
 Stop proxied traffic first, then run on the pivot:
 
@@ -29,7 +29,7 @@ Stop proxied traffic first, then run on the pivot:
 sudo bash ssh-pivot-tune.sh restore
 ```
 
-## 📌 Essentials
+##  Essentials
 
 - **Requirements:** Linux, root, Bash 4+, `sysctl`, `prlimit`, `flock`, `awk`, and coreutils.
 - **New connections:** run `apply` again for each new SSH worker. Some TCP changes require reconnecting, then reapplying.
